@@ -10,7 +10,11 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 export const routes: Routes = [
     {path:'',component:FrontLayoutComponent,children:[
         {path:'',loadChildren:()=>import('./views/front/home/home.module').then(m=>m.HomeModule)},
-        {path:'loginuser',loadChildren:()=>import('./views/front/loginuser/loginuser.module').then(m=>m.LoginuserModule)}
+        {path:'loginuser',loadChildren:()=>import('./views/front/loginuser/loginuser.module').then(m=>m.LoginuserModule)},
+        {path:'about',loadChildren:()=>import('./views/front/about/about.module').then(m=>m.AboutModule)},
+        {path:'house',loadChildren:()=>import('./views/front/house/house.module').then(m=>m.HouseModule)},
+        {path:'binom',loadChildren:()=>import('./views/front/binom/binom.module').then(m=>m.BinomModule)},
+        {path:'contact',loadChildren:()=>import('./views/front/contact/contact.module').then(m=>m.ContactModule)}
     ]},
     {path:'admin',component:AdminLayoutComponent,children:[
         {path:'dashboard',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
