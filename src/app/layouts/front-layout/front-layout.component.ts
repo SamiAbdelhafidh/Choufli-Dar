@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-front-layout',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './front-layout.component.html',
-  styleUrl: './front-layout.component.css'
+  styleUrl: './front-layout.component.css',
+  standalone:true,
 })
 export class FrontLayoutComponent {
 
