@@ -1,25 +1,53 @@
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-    <div class="w3-container">
-      <h3 class="w3-padding-64"><b>Modern</b><br><b>Apartment</b><br><b>House </b><br></h3>
-      
-      
-    </div>
-    <div class="w3-bar-block">
-      <a routerLink="/" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-      <a routerLink="/register" class="w3-bar-item w3-button w3-hover-white">Register</a>
-      <a routerLink="/loginuser" class="w3-bar-item w3-button w3-hover-white">Login</a> 
-      <a routerLink="/about" class="w3-bar-item w3-button w3-hover-white">About</a> 
-      <a routerLink="/house" class="w3-bar-item w3-button w3-hover-white">House</a> 
-      <a routerLink="/binom" class="w3-bar-item w3-button w3-hover-white">Binom</a>
-      <a routerLink="/contact" class="w3-bar-item w3-button w3-hover-white">Contact us</a>
-      
-    </div>
-  </nav>
+<nav class="w3-sidebar  w3-top w3-large w3-padding" style="background-color: #B4846C;"
+    id="mySidebar" 
+    [@sidebarAnimation]="isSidebarOpen ? 'open' : 'closed'">
   
-  <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-    <span>Company Name</span>
-  </header>
+  <button class="w3-button w3-hide-large w3-display-topleft close-btn" 
+          (click)="toggleSidebar()">
+    Close ✖
+  </button>
+
+  <div class="w3-container text-container">
+    <h3 class="heading">
+      <span class="modern">Modern</span><br>
+      <span class="apartment">Apartment</span><br>
+      <span class="house">House</span>
+    </h3>
+  </div>
+  
+  
+
+  <div class="w3-bar-block">
+    <a routerLink="/" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-home"></i><span class="home"> Home </span>
+    </a> 
+    <a routerLink="/register" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-user-plus"></i><span class="register"> Register </span>
+    </a>
+    <a routerLink="/loginuser" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-sign-in"></i><span class="login"> Login </span>
+    </a> 
+    <a routerLink="/about" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-info-circle"></i> <span class="about"> About</span>
+    </a> 
+    <a routerLink="/house" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-building"></i><span class="housee"> House </span>
+    </a> 
+    <a routerLink="/binom" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-chart-bar"></i> <span class="binom"> Binom</span>
+    </a>
+    <a routerLink="/contact" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-envelope"></i><span class="contact"> Contact us</span>
+    </a>
+  </div>
+</nav>
+
+<!-- Mobile Header -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <button class="w3-button w3-black w3-margin-right" (click)="toggleSidebar()">
+    &#9776;
+  </button>
+  <span>Company Name</span>
+</header>
+
 <router-outlet></router-outlet>

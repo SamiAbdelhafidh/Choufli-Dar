@@ -1,0 +1,120 @@
+#mySidebar {
+    width: 300px;
+    z-index: 3;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+/* Text container styling */
+.text-container {
+    text-align: center; /* Centers the text */
+    padding: 64px 20px;
+  }
+  
+  /* Modern Text */
+  .modern {
+    color: #FFFBE9; /* Light cream color */
+    font-size: 2.3rem; /* Adjust size */
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds depth */
+  }
+  
+  /* Apartment Text */
+  .apartment {
+    color: #E3CAA5; /* Warm beige */
+    font-size: 2.9rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* House Text */
+  .house {
+    color: #CEAB93; /* Soft brown */
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .home {
+    color: white; /* Soft brown */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .register {
+    color: white; /* Soft brown */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .login {
+    color: white; /* Soft brown */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .about {
+    color: white; /* Soft brown */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .housee {
+    color: white; /* Soft brown */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .binom {
+    color: white; /* Soft brown */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .contact {
+    color: white; /* Soft brown */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+
+  
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .modern, .apartment, .house {
+      font-size: 2rem; /* Reduce size on smaller screens */
+    }
+  }
+  
+   /* Hide sidebar on mobile
+  @media screen and (max-width: 768px) {
+    #mySidebar {
+      position: fixed;
+      left: -300px;
+      top: 0;
+      height: 100%;
+    }
+    .show-sidebar {
+      left: 0 !important;
+    }
+  } */
+  
+  /* Close button styling */
+     /* .close-btn {
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
+  }
+  
+  Style menu items 
+ .w3-bar-item {
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+  
+  .w3-bar-item i {
+    margin-right: 10px;
+  }  */
