@@ -14,7 +14,8 @@ export const routes: Routes = [
         {path:'about',loadChildren:()=>import('./views/front/about/about.module').then(m=>m.AboutModule)},
         {path:'house',loadChildren:()=>import('./views/front/house/house.module').then(m=>m.HouseModule)},
         {path:'binom',loadChildren:()=>import('./views/front/binom/binom.module').then(m=>m.BinomModule)},
-        {path:'contact',loadChildren:()=>import('./views/front/contact/contact.module').then(m=>m.ContactModule)}
+        {path:'contact',loadChildren:()=>import('./views/front/contact/contact.module').then(m=>m.ContactModule)},
+        {path:'register',loadChildren:()=>import('./views/front/register/register.module').then(m=>m.RegisterModule)}
     ]},
     {path:'admin',component:AdminLayoutComponent,children:[
         {path:'dashboard',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
