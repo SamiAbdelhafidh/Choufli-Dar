@@ -20,3 +20,7 @@
   #card:hover{
     transform: translateY(-5px);
   }
+
+  #b :hover{
+    background-color: #B4846C !important;
+  }
