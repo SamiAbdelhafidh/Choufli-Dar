@@ -24,12 +24,12 @@ body {
   }
   
   h1.w3-text-red {
-    color: #d32f2f !important;
+    color: #B4846C !important;
   }
   
   hr {
     width: 60px;
-    border: 4px solid #d32f2f;
+    border: 4px solid #B4846C;
     border-radius: 5px;
     margin-bottom: 20px;
   }
