@@ -21,4 +21,14 @@
   #card:hover {
     transform: translateY(-5px);
   }
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  .message{
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
   
