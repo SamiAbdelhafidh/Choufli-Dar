@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Overlay */
+  .w3-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Header */
+  .w3-main {
+    margin-left: 340px;
+    margin-right: 40px;
+  }
+  
+  h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  h1.w3-text-red {
+    color: #d32f2f !important;
+  }
+  
+  hr {
+    width: 60px;
+    border: 4px solid #d32f2f;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Gallery */
+  .w3-row-padding img {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .w3-row-padding img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modal */
+  .w3-modal-content {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Services Section */
+  #services, #designers, #packages {
+    background: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  /* Team Section */
+  .w3-light-grey {
+    background: #fff !important;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .w3-light-grey img {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Pricing Tables */
+  .w3-ul {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .w3-dark-grey, .w3-red {
+    color: #fff !important;
+    font-weight: bold;
+  }
+  
+  .w3-button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .w3-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .w3-main {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 20px;
+    }
+  
+    .w3-row-padding {
+      flex-direction: column;
+    }
+  }
+  
