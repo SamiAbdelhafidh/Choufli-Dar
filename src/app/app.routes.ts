@@ -13,6 +13,7 @@ export const routes: Routes = [
         {path:'loginuser',loadChildren:()=>import('./views/front/loginuser/loginuser.module').then(m=>m.LoginuserModule)},
         {path:'about',loadChildren:()=>import('./views/front/about/about.module').then(m=>m.AboutModule)},
         {path:'house',loadChildren:()=>import('./views/front/house/house.module').then(m=>m.HouseModule)},
+        {path:'proprietaire',loadChildren:()=>import('./views/front/proprietaire/proprietaire.module').then(m=>m.ProprietaireModule)},
         {path:'binom',loadChildren:()=>import('./views/front/binom/binom.module').then(m=>m.BinomModule)},
         {path:'contact',loadChildren:()=>import('./views/front/contact/contact.module').then(m=>m.ContactModule)},
         {path:'register',loadChildren:()=>import('./views/front/register/register.module').then(m=>m.RegisterModule)}
