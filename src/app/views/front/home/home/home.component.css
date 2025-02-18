@@ -108,4 +108,73 @@ body {
       flex-direction: column;
     }
   }
+  /* From Uiverse.io by alexmaracinaru */ 
+.card {
+  width: 390px;
+  height: 454px;
+  background: #AD8B73;
+  border-radius: 50px;
+  box-shadow: 1px 15px 90px 0px #AD8B73;
+ }
+ 
+ .card .card-border-top {
+  width: 60%;
+  height: 4%;
+  background: #CEAB93;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+ }
+ 
+ .card span {
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 90px;
+  font-size: 30px;
+ }
+ 
+ .card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 19px;
+ }
+ 
+ .card .img {
+  width: 90px;
+  height: 80px;
+  background: #AD8B73;
+  border-radius: 45px;
+
+  margin-top: 50px;
+  margin-left:100px ;
+  margin-right:90px ;
+ }
+ 
+ .card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  background: #CEAB93;
+  color: white;
+  font-weight: 600;
+ }
+ 
+ .card button:hover {
+  background: #CEAB93;
+ }
+ .tele {
+  width: 192px;
+  height: 120px;
+  background: #CEAB93;
+  border-radius: 90px;
+  margin: auto;
+  margin-top: 0px;
+ }
   
