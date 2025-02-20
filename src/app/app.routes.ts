@@ -16,7 +16,8 @@ export const routes: Routes = [
         {path:'proprietaire',loadChildren:()=>import('./views/front/proprietaire/proprietaire.module').then(m=>m.ProprietaireModule)},
         {path:'binom',loadChildren:()=>import('./views/front/binom/binom.module').then(m=>m.BinomModule)},
         {path:'contact',loadChildren:()=>import('./views/front/contact/contact.module').then(m=>m.ContactModule)},
-        {path:'register',loadChildren:()=>import('./views/front/register/register.module').then(m=>m.RegisterModule)}
+        {path:'register',loadChildren:()=>import('./views/front/register/register.module').then(m=>m.RegisterModule)},
+        {path:'profile',loadChildren:()=>import('./views/front/profile/profile.module').then(m=>m.ProfileModule)}
     ]},
     {path:'admin',component:AdminLayoutComponent,children:[
         {path:'dashboard',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
