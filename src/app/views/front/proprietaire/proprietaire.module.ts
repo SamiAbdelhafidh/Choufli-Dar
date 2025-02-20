@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 import { ProprietaireRoutingModule } from './proprietaire-routing.module';
 
 
