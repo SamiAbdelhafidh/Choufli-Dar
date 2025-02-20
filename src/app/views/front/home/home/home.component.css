@@ -180,8 +180,8 @@ body {
  /* From Uiverse.io by gharsh11032000 */ 
 .card {
   position: relative;
-  width: 190px;
-  height: 254px;
+  width: 220px;
+  height: 300px;
 
   background-size: cover;
 
@@ -200,8 +200,8 @@ body {
   inset: 0;
   left: -5px;
   margin: auto;
-  width: 200px;
-  height: 264px;
+  width: 220px;
+  height: 300px;
   border-radius: 10px;
   background: linear-gradient(-45deg, #AD8B73 0%, #FFFBE9 100% );
   z-index: -10;
@@ -230,7 +230,7 @@ body {
 }
 
 .card p:last-child {
-  color: #AD8B73;
+  color: black;
   font-weight: 600;
 }
 
