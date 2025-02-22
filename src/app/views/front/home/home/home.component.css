@@ -222,7 +222,7 @@ body {
 }
 
 .heading {
-  font-size: 0px;
+  font-size: 1px;
   text-transform: capitalize;
   font-weight: 400;
 }
