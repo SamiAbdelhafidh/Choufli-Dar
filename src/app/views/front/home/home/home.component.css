@@ -170,18 +170,20 @@ body {
   background: #CEAB93;
  }
  .tele {
-  width: 192px;
-  height: 120px;
+  width: 282px;
+  height: 180px;
   background: #CEAB93;
-  border-radius: 90px;
+  border-radius: 790px;
   margin: auto;
-  margin-top: 0px;
+  margin-top: 790px;
+  
  }
+
  /* From Uiverse.io by gharsh11032000 */ 
 .card {
   position: relative;
-  width: 220px;
-  height: 300px;
+  width: 320px;
+  height: 350px;
 
   background-size: cover;
 
@@ -190,7 +192,7 @@ body {
   justify-content: end;
   padding: 12px;
   gap: 12px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -200,10 +202,10 @@ body {
   inset: 0;
   left: -5px;
   margin: auto;
-  width: 220px;
-  height: 300px;
+  width: 320px;
+  height: 350px;
   border-radius: 10px;
-  background: linear-gradient(-45deg, #AD8B73 0%, #FFFBE9 100% );
+  background: linear-gradient(-45deg, #AD8B73 0%, #030302 100% );
   z-index: -10;
   pointer-events: none;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -220,18 +222,19 @@ body {
 }
 
 .heading {
-  font-size: 20px;
+  font-size: 0px;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .card p:not(.heading) {
-  font-size: 14px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .card p:last-child {
   color: black;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 .card:hover::after {
