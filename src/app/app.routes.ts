@@ -22,10 +22,11 @@ export const routes: Routes = [
     {path:'admin',component:AdminLayoutComponent,children:[
         {path:'',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
         {path:'dashboard',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
+        {path:'allstudents',loadChildren:()=>import('./views/admin/allstudents/allstudents.module').then(m=>m.AllstudentsModule)},
         {path:'loginadmin',loadChildren:()=>import('./views/admin/loginadmin/loginadmin.module').then(m=>m.LoginadminModule)} 
     ]}
 ];
-
+ 
 @NgModule({
     declarations:[
         
