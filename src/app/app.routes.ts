@@ -20,6 +20,7 @@ export const routes: Routes = [
         {path:'profile',loadChildren:()=>import('./views/front/profile/profile.module').then(m=>m.ProfileModule)}
     ]},
     {path:'admin',component:AdminLayoutComponent,children:[
+        {path:'',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
         {path:'dashboard',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
         {path:'loginadmin',loadChildren:()=>import('./views/admin/loginadmin/loginadmin.module').then(m=>m.LoginadminModule)} 
     ]}
