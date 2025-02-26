@@ -1,0 +1,26 @@
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(0) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  
+  
+  #card{
+    transition: transform 0.2s ease-in-out;
+    animation: fadeIn 0.7s ease-in-out;
+    transform-origin: center;
+  }
+  #card:hover{
+    transform: translateY(-5px);
+  }
+
+  #b :hover{
+    background-color: #B4846C !important;
+  }

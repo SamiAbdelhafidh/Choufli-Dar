@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LayoutsModule } from './layouts/layouts.module';
 import { FrontLayoutComponent } from './layouts/front-layout/front-layout.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { AuthAdminLayoutComponent } from './layouts/auth-admin-layout/auth-admin-layout.component';
 
 export const routes: Routes = [
     {path:'',component:FrontLayoutComponent,children:[
@@ -24,7 +25,8 @@ export const routes: Routes = [
         {path:'dashboard',loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
         {path:'allstudents',loadChildren:()=>import('./views/admin/allstudents/allstudents.module').then(m=>m.AllstudentsModule)},
         {path:'loginadmin',loadChildren:()=>import('./views/admin/loginadmin/loginadmin.module').then(m=>m.LoginadminModule)} 
-    ]}
+    ]},
+    {path:'admin/loginuser',component:AuthAdminLayoutComponent}
 ];
  
 @NgModule({
