@@ -14,12 +14,12 @@
   
         <div class="w3-section" style="animation: slideInLeft 1.2s ease-out;">
           <label for="email" style="font-size: 16px;">Email</label>
-          <input class="w3-input w3-border w3-round" type="email" name="Email" id="email" ngModel  required placeholder="Enter your email" style="padding: 12px; font-size: 14px;">
+          <input class="w3-input w3-border w3-round" type="email" name="Email" id="email" ngModel #email="ngModel" required placeholder="Enter your email" style="padding: 12px; font-size: 14px;">
         </div>
   
         <div class="w3-section" style="animation: slideInLeft 1.4s ease-out;">
           <label for="password" style="font-size: 16px;">Password</label>
-          <input class="w3-input w3-border w3-round" type="password" name="Password" id="password" ngModel  required placeholder="Enter your password" style="padding: 12px; font-size: 14px;">
+          <input class="w3-input w3-border w3-round" type="password" name="Password" id="password" ngModel #password="ngModel" required placeholder="Enter your password" style="padding: 12px; font-size: 14px;">
         </div>
         
         <button type="submit" class=" w3-block w3-padding-large w3 w3-margin-top w3-hover-shadow" style="font-size: 18px; font-weight: bold;background-color: white; border: 2px solid#B4846C;  border-radius: 5px;"><span style="color:#B4846C" >Sign Up</span> </button>
