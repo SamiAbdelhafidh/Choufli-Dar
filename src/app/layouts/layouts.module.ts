@@ -5,6 +5,7 @@ import { FrontLayoutComponent } from './front-layout/front-layout.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthAdminLayoutComponent } from './auth-admin-layout/auth-admin-layout.component';
+import { RegAdminLayoutComponent } from './reg-admin-layout/reg-admin-layout.component';
 
 
 
@@ -18,6 +19,7 @@ import { AuthAdminLayoutComponent } from './auth-admin-layout/auth-admin-layout.
     AdminLayoutComponent,
     FrontLayoutComponent,
     AuthAdminLayoutComponent,
+    RegAdminLayoutComponent,
     RouterModule,
     BrowserAnimationsModule
   ]
