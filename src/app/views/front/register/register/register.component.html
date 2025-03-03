@@ -7,9 +7,27 @@
       <form #f="ngForm" (ngSubmit)="register(f)">
         <div class="flex" style="animation: slideInLeft 1s ease-out;">
           <label for="username" style="font-size: 16px;"></label>
-          <input class="w3-input w3-border w3-round" type="text" name="UserName" id="username" ngModel #username="ngModel" required placeholder="Firstname" style="padding: 12px; font-size: 14px;">
+          <input class="w3-input w3-border w3-round" type="text" name="UserName" id="username" ngModel #username="ngModel" required minlength="4" maxlength="20" placeholder="Firstname" style="padding: 12px; font-size: 14px;">
+          <div class="alert alert-danger" *ngIf="username.errors?.['required'] && username.touched " >
+            This firstname input is required
+        </div>
+        <div class="alert alert-danger" *ngIf="username.touched && username.errors?.['minlength'] ">
+            minlength error minimum 4 caracters
+        </div>
+        <div class="alert alert-danger" *ngIf="username.touched && username.errors?.['maxlength']  ">
+            maxlength error maximum 20 caracters
+        </div>
           <label for="lastname" style="font-size: 16px;"></label>
-          <input class="w3-input w3-border w3-round" type="text" name="lastName" id="lastname" ngModel #lastname="ngModel" required placeholder="Lastname" style="padding: 12px; font-size: 14px;">
+          <input class="w3-input w3-border w3-round" type="text" name="lastName" id="lastname" ngModel #lastname="ngModel" required minlength="4" maxlength="20" placeholder="Lastname" style="padding: 12px; font-size: 14px;">
+          <div class="alert alert-danger" *ngIf="lastname.errors?.['required'] && lastname.touched " >
+            This firstname input is required
+        </div>
+        <div class="alert alert-danger" *ngIf="lastname.touched && lastname.errors?.['minlength'] ">
+            minlength error minimum 4 caracters
+        </div>
+        <div class="alert alert-danger" *ngIf="lastname.touched && lastname.errors?.['maxlength']  ">
+            maxlength error maximum 20 caracters
+        </div>
         </div>
   
         <div class="w3-section" style="animation: slideInLeft 1.2s ease-out;">
