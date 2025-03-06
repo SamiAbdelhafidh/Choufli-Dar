@@ -5,6 +5,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthuserService {
+  contact(data: any) {
+    return this.http.post('http://localhost:4200/register', data);
+  }
   
   constructor(private http: HttpClient) { }
 
@@ -16,3 +19,8 @@ export class AuthuserService {
     return this.http.post('http://localhost:4200/login', body);
   }
 }
+import { Observable } from 'rxjs';
+
+//contact(data: any): Observable<any> {
+  // method implementation
+//}
