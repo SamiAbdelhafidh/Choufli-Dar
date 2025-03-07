@@ -3,15 +3,33 @@
       <h1 class="w3-xxxlarge w3-text" style="text-align: center; color:#B4846C; font-weight: bold; font-size: 36px;">Login</h1>
       <hr style="width: 50px; border: 5px solid ;color:#B4846C;  margin: 20px auto;" class="w3-round">
       
-      <form  #ff="ngForm" (ngSubmit)="login(ff)">
+      <form #ff="ngForm" (ngSubmit)="login(ff)">
         <div class="w3-section">
           <label for="email" style="font-size: 16px;">Email</label>
-          <input class="w3-input w3-border w3-round" type="email" name="email" id="email" required placeholder="Enter your email" style="padding: 12px; font-size: 14px;">
+          <input class="w3-input w3-border w3-round" type="email" name="email" id="email" ngModel #email="ngModel" required placeholder="Enter your email" style="padding: 12px; font-size: 14px;">
+          <div class="alert alert-danger" *ngIf="email.errors?.['required'] && email.touched">
+            This email input is required
+          </div>
+          <div class="alert alert-danger" *ngIf="email.touched && email.errors?.['minlength']">
+            minlength error minimum 4 characters
+          </div>
+          <div class="alert alert-danger" *ngIf="email.touched && email.errors?.['maxlength']">
+            maxlength error maximum 20 characters
+          </div>
         </div>
         
         <div class="w3-section">
           <label for="password" style="font-size: 16px;">Password</label>
-          <input class="w3-input w3-border w3-round" type="password" name="password" id="password" required placeholder="Enter your password" style="padding: 12px; font-size: 14px;">
+          <input class="w3-input w3-border w3-round" type="password" name="password" id="password" ngModel #password="ngModel" required placeholder="Enter your password" style="padding: 12px; font-size: 14px;">
+          <div class="alert alert-danger" *ngIf="password.errors?.['required'] && password.touched">
+            This password input is required
+          </div>
+          <div class="alert alert-danger" *ngIf="password.touched && password.errors?.['minlength']">
+            minlength error minimum 4 characters
+          </div>
+          <div class="alert alert-danger" *ngIf="password.touched && password.errors?.['maxlength']">
+            maxlength error maximum 20 characters
+          </div>
         </div>
         
         <button id="b"  type="submit" class=" w3-block w3-padding-large w3 w3-margin-top w3-hover-shadow" style="font-size: 18px; font-weight: bold;background-color: white; border: 2px solid#B4846C;  border-radius: 5px;"><span style="color: #B4846C;">Login</span> </button>
