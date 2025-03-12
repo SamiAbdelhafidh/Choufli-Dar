@@ -4,19 +4,11 @@
       <hr style="width: 50px; border: 5px solid; color:#B4846C;; margin: 20px auto;" class="w3-round">
       <p class="message">*  Signup now and get full access to our app. </p>
       
-      <form #f="ngForm" (ngSubmit)="register(f)">
+      <form >
         <div class="flex" style="animation: slideInLeft 1s ease-out;">
           <label for="username" style="font-size: 16px;"></label>
-          <input class="w3-input w3-border w3-round" type="text" name="UserName" id="username" ngModel #username="ngModel" required minlength="4" maxlength="20" placeholder="Firstname" style="padding: 12px; font-size: 14px;">
-          <div class="alert alert-danger" *ngIf="username.errors?.['required'] && username.touched " >
-            This firstname input is required
-        </div>
-        <div class="alert alert-danger" *ngIf="username.touched && username.errors?.['minlength'] ">
-            minlength error minimum 4 caracters
-        </div>
-        <div class="alert alert-danger" *ngIf="username.touched && username.errors?.['maxlength']  ">
-            maxlength error maximum 20 caracters
-        </div>
+          <input class="w3-input w3-border w3-round" type="text" name="UserName" id="username"  required minlength="4" maxlength="20" placeholder="Firstname" style="padding: 12px; font-size: 14px;">
+         
           <label for="lastname" style="font-size: 16px;"></label>
           <input class="w3-input w3-border w3-round" type="text" name="lastName" id="lastname" ngModel #lastname="ngModel" required minlength="4" maxlength="20" placeholder="Lastname" style="padding: 12px; font-size: 14px;">
           <div class="alert alert-danger" *ngIf="lastname.errors?.['required'] && lastname.touched " >

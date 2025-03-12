@@ -17,10 +17,10 @@ export class ContactComponent implements OnInit {
     ngOnInit(): void {    
     }
   
-    contact(f: any) {
-      let data=f.value
-      this.aus.contact(data).subscribe(data=>console.log(data))
+   // contact(f: any) {
+     // let data=f.value
+    //  this.aus.contact(data).subscribe(data=>console.log(data))
 
   
-    }
+   // }
 }

@@ -19,10 +19,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {    
   }
 
-  register(f: any) {
-    let data=f.value
-    this.aus.register(data).subscribe(data=>console.log(data))
-  }
+
   
 
 }
