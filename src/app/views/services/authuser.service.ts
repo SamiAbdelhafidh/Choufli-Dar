@@ -12,6 +12,7 @@ export class AuthuserService {
   login(body:any){
     return this.http.post('http://localhost:4200/login', body);
   }
+  
 }
 import { Observable } from 'rxjs';
 
