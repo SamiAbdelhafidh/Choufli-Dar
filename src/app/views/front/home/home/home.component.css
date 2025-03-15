@@ -110,7 +110,7 @@ body {
   }
   /* From Uiverse.io by alexmaracinaru */ 
 .card {
-  width: 390px;
+  width: 90px;
   height: 454px;
   background: #AD8B73;
   border-radius: 50px;
@@ -144,7 +144,7 @@ body {
  }
  
  .card .img {
-  width: 90px;
+  width: 50px;
   height: 80px;
   background: #AD8B73;
   border-radius: 45px;
@@ -202,8 +202,8 @@ body {
   inset: 0;
   left: -5px;
   margin: auto;
-  width: 320px;
-  height: 350px;
+  width: 300px;
+  height: 340px;
   border-radius: 10px;
   background: linear-gradient(-45deg, #AD8B73 0%, #030302 100% );
   z-index: -10;
