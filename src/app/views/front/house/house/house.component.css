@@ -240,6 +240,22 @@ body {
 .card:hover::before {
   transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
 }
-
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+.description {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  background-color: #fff;
+  flex-grow: 1; 
+}
 
   
