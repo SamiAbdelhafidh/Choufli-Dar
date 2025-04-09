@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { BinomMRoutingModule } from './binom-m-routing.module';
+import { BinommainRoutingModule } from './binommain-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    BinomMRoutingModule
+    BinommainRoutingModule
   ]
 })
-export class BinomMModule { }
+export class BinommainModule { }

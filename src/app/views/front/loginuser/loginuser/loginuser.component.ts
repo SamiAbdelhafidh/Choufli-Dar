@@ -16,8 +16,5 @@ export class LoginuserComponent implements OnInit {
     ngOnInit(): void {    
     }
   
-    login(ff: any) {
-      let data=ff.value
-      this.aus.login(data).subscribe(data=>console.log(data))
-    }
+
 }
