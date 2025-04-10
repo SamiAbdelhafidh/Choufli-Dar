@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BinommainComponent } from './binommain/binommain.component';
+import { LoginnComponent } from './loginn/loginn.component';
 
-const routes: Routes = [
-  {path:'',component:BinommainComponent},
-];
+const routes: Routes = [{path:'',component:LoginnComponent},];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class BinommainRoutingModule { }
+export class LoginnRoutingModule { }

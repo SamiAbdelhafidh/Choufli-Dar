@@ -1,0 +1,24 @@
+<!-- Close overlay for small screens -->
+<div class="overlay w3-overlay w3-hide-large" (click)="w3_close()" title="Fermer le menu" id="myOverlay"></div>
+
+<!-- Main content area -->
+<div class="main-content-area"  style="margin-left: 340px; margin-right: 40px;">
+  <div class="login-button" (click)="login()">
+    <button class="btn-login" >Login</button>
+  </div>
+
+  <!-- Main Listing Section -->
+  <div class="listing-container">
+    <div class="card" *ngFor="let item of listings">
+      <div class="image-zone">
+        <img [src]="item.image" [alt]="item.alt" />
+      </div>
+      <div class="description">
+        <p>{{ item.line1 }}</p>
+        <p>{{ item.line2 }}</p>
+        <mark>{{ item.price }}</mark>
+      </div>
+    </div>
+  </div>
+</div>
+

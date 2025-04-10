@@ -9,15 +9,17 @@ export const routes: Routes = [
     {
         path: '', component: FrontLayoutComponent, children: [
             { path: '', loadChildren: () => import('./views/front/home/home.module').then(m => m.HomeModule) },
-            { path: 'loginuser', loadChildren: () => import('./views/front/loginuser/loginuser.module').then(m => m.LoginuserModule) },
+            { path: 'loginn', loadChildren: () => import('./views/front/loginn/loginn.module').then(m => m.LoginnModule) },
             { path: 'about', loadChildren: () => import('./views/front/about/about.module').then(m => m.AboutModule) },
             { path: 'house', loadChildren: () => import('./views/front/house/house.module').then(m => m.HouseModule) },
             { path: 'proprietaire', loadChildren: () => import('./views/front/proprietaire/proprietaire.module').then(m => m.ProprietaireModule) },
             { path: 'binom', loadChildren: () => import('./views/front/binom/binom.module').then(m => m.BinomModule) },
-            { path: 'contact', loadChildren: () => import('./views/front/contact/contact.module').then(m => m.ContactModule) },
+            { path: 'contactt', loadChildren: () => import('./views/front/contactt/contactt.module').then(m => m.ContacttModule) },
             { path: 'register', loadChildren: () => import('./views/front/register/register.module').then(m => m.RegisterModule) },
             { path: 'profile', loadChildren: () => import('./views/front/profile/profile.module').then(m => m.ProfileModule) },
-            { path: 'binommain', loadChildren: () => import('./views/front/binommain/binommain.module').then(m => m.BinommainModule) }
+            { path: 'binommain', loadChildren: () => import('./views/front/binommain/binommain.module').then(m => m.BinommainModule) },
+            { path: 'sign', loadChildren: () => import('./views/front/sign/sign.module').then(m => m.SignModule) },
+            { path: 'main', loadChildren: () => import('./views/front/main/main.module').then(m => m.MainModule) }
         ]
     },
     {

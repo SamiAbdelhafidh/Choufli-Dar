@@ -1,1 +1,68 @@
-<p>binommain works!</p>
+<div id="card" class="w3-main" style="display: flex; justify-content: center; align-items: center; height: 100vh; margin-left: 0px; margin-right: 0px;">
+    <div id="card" class="w3-container w3-card-4 w3-padding-32"  style="max-width: 400px; width: 100%;background-color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo de l'app">
+    </div>
+    <button class="add-btn" id="add-btn">+ Ajouter</button>
+  </header>
+
+
+  <main class="grid-container">
+    <div class="card">
+      <div class="image-zone">
+        <input type="file" accept="image/*" placeholder="Ajouter une image">
+      </div>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="number" placeholder="Age" required>
+        <input type="text" placeholder="Location" required>
+        <input type="text" placeholder="Institute" required>
+        <textarea placeholder="Description" required></textarea>
+        <input type="text" placeholder="To share" required>
+        <button class="contact-btn" type="submit">Contacter</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <div class="image-zone">
+        <input type="file" accept="image/*" placeholder="Ajouter une image">
+      </div>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="number" placeholder="Age" required>
+        <input type="text" placeholder="Location" required>
+        <input type="text" placeholder="Institute" required>
+        <textarea placeholder="Description" required></textarea>
+        <input type="text" placeholder="To share" required>
+        <button class="contact-btn" type="submit">Contacter</button>
+      </form>
+    </div>
+
+ 
+  </main>
+
+  <script>
+    const addBtn = document.getElementById('add-btn');
+    const container = document.querySelector('.grid-container');
+
+    addBtn.addEventListener('click', () => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="image-zone">
+          <input type="file" accept="image/*" placeholder="Ajouter une image">
+        </div>
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="number" placeholder="Age" required>
+          <input type="text" placeholder="Location" required>
+          <input type="text" placeholder="Institute" required>
+          <textarea placeholder="Description" required></textarea>
+          <input type="text" placeholder="To share" required>
+          <button class="contact-btn" type="submit">Contacter</button>
+        </form>
+      `;
+      container.appendChild(card);
+    });
+  </script>
