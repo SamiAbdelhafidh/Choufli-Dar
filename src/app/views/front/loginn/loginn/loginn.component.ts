@@ -9,7 +9,7 @@ import { Route, Router } from '@angular/router';
 })
 export class LoginnComponent {
 constructor(private router:Router) { }
-main(){
+proprietaire(){
   console.log('main clicked');
   this.router.navigate(['/main']);
 }

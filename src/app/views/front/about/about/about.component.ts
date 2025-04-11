@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-about',
   imports: [],
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-
+constructor(private router:Router) { }
+main(){
+  console.log('main clicked');
+  this.router.navigate(['/main']);
+}
 }

@@ -90,7 +90,7 @@
   }
   
   .contact-btn {
-    background-color: #28a745;
+    background-color: #AD8B73;
     color: white;
     border: none;
     padding: 0.8rem;
@@ -99,6 +99,6 @@
     cursor: pointer;
   }
   .contact-btn:hover {
-    background-color: #218838;
+    background-color: #AD8B73;
   }
   

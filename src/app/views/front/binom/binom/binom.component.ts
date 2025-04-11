@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-binom',
@@ -17,5 +18,10 @@ export class BinomComponent {
   onSubmit(event: Event) {
     event.preventDefault();
     alert('Form submitted!');
+  }
+  constructor(private router:Router) { }
+  contact(){
+    console.log('main clicked');
+    this.router.navigate(['/contactt']);
   }
 }

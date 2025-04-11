@@ -1,0 +1,45 @@
+
+<div *ngIf="display">
+  <nav class="w3-sidebar  w3-top w3-large w3-padding" style="background-color: #B4846C;"
+    id="mySidebar" 
+    [@sidebarAnimation]="isSidebarOpen ? 'open' : 'closed'">
+  
+  <button class="w3-button w3-hide-large w3-display-topleft close-btn" 
+          (click)="toggleSidebar()">
+    Close ✖
+  </button>
+
+  <div class="w3-container text-container">
+    <h3 class="heading">
+      <div class="logo">
+        <img src="logoo.png" alt="Logo de l'app">
+      </div>
+    </h3>
+  </div>
+  
+  
+
+  <div class="w3-bar-block">
+    <a routerLink="/" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-home"></i><span class="home"> Home </span>
+    </a> 
+  
+  
+    <a routerLink="/main" class="w3-bar-item w3-button w3-hover-white">
+      <i class="fa fa-building"></i><span class="housee"> Main </span>
+    </a> 
+    
+  
+  </div>
+</nav>
+
+<!-- Mobile Header -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <button class="w3-button w3-black w3-margin-right" (click)="toggleSidebar()">
+    &#9776;
+  </button>
+  <span>Company Name</span>
+</header>
+
+</div>
+<router-outlet></router-outlet>
