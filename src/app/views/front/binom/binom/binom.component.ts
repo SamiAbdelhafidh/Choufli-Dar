@@ -22,6 +22,6 @@ export class BinomComponent {
   constructor(private router:Router) { }
   contact(){
     console.log('main clicked');
-    this.router.navigate(['/contactt']);
+    this.router.navigate(['/butn-contact']);
   }
 }

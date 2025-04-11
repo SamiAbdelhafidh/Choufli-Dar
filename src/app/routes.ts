@@ -19,7 +19,8 @@ export const routes: Routes = [
             { path: 'profile', loadChildren: () => import('./views/front/profile/profile.module').then(m => m.ProfileModule) },
             { path: 'binommain', loadChildren: () => import('./views/front/binommain/binommain.module').then(m => m.BinommainModule) },
             { path: 'sign', loadChildren: () => import('./views/front/sign/sign.module').then(m => m.SignModule) },
-            { path: 'main', loadChildren: () => import('./views/front/main/main.module').then(m => m.MainModule) }
+            { path: 'main', loadChildren: () => import('./views/front/main/main.module').then(m => m.MainModule) },
+            { path: 'btcont', loadChildren: () => import('./views/front/btcont/btcont.module').then(m => m.BtcontModule) }
         ]
     },
     {
