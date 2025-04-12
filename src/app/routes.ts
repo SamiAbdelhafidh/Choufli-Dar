@@ -10,6 +10,7 @@ export const routes: Routes = [
         path: '', component: FrontLayoutComponent, children: [
             { path: '', loadChildren: () => import('./views/front/home/home.module').then(m => m.HomeModule) },
             { path: 'loginn', loadChildren: () => import('./views/front/loginn/loginn.module').then(m => m.LoginnModule) },
+            { path: 'loginprp', loadChildren: () => import('./views/front/loginprp/loginprp.module').then(m => m.LoginprpModule) },
             { path: 'about', loadChildren: () => import('./views/front/about/about.module').then(m => m.AboutModule) },
             { path: 'house', loadChildren: () => import('./views/front/house/house.module').then(m => m.HouseModule) },
             { path: 'proprietaire', loadChildren: () => import('./views/front/proprietaire/proprietaire.module').then(m => m.ProprietaireModule) },

@@ -55,12 +55,13 @@
   /* Description */
   .description {
     padding: 27px;
+    
   }
   .description p {
     margin: 0 0 8px;
   }
   .description mark {
-    background-color: #ffd700;
+    background-color: #d4c4b5;
     font-weight: bold;
     padding: 2px 6px;
     border-radius: 4px;
