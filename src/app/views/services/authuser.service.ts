@@ -5,8 +5,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthuserService {
- 
+
+  private apiUrl = 'http://192.168.1.10:3000/api/products';
   constructor(private http: HttpClient) { }
+  getProducts(): Observable<AuthuserService[]> {
+    return this.http.get<AuthuserService[]>(this.apiUrl);
+  }
+
+
 
  
   login(body:any){
