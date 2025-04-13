@@ -20,7 +20,7 @@ export class AuthuserService {
   }
   
 }
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs'; 
 
 //contact(data: any): Observable<any> {
   // method implementation
