@@ -1,64 +1,42 @@
+
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<body>
 
-  <!-- Bouton pour ouvrir la modale -->
-  <button class="contact-btn" onclick="openModal()">Contact</button>
+<button class="contact-btn" (click)="openModal()">Contact</button>
 
-  <!-- Modale -->
-  <div class="modal" id="contactModal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h3>Contact</h3>
-      <form id="contactForm">
-        <label for="phone">Numéro :</label>
-        <input type="text" id="phone" name="phone" required>
 
-        <label for="facebook">Facebook :</label>
-        <input type="text" id="facebook" name="facebook" required>
+<div class="modal" *ngIf="showModal">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">
+      <i class="fas fa-times"></i>
+    </span>
+    
+    <h3><i class="fas fa-envelope"></i> Contact</h3>
+    
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+      <div class="input-group">
+        <i class="fas fa-phone"></i>
+      <input type="text" id="phone" name="phone" [(ngModel)]="phone" required placeholder="Numéro">
+      </div>
+      <div class="input-group">
+        <i class="fab fa-facebook"></i>
+      <input type="text" id="facebook" name="facebook" [(ngModel)]="facebook" required placeholder="Facebook">
+      </div>
+      <div class="input-group">
+        <i class="fab fa-instagram"></i>
+      
+      <input type="text" id="instagram" name="instagram" [(ngModel)]="instagram" required placeholder="Instagram">
+      </div>
+      <button type="submit" [disabled]="!contactForm.valid">Envoyer</button>
+    </form>
 
-        <label for="instagram">Instagram :</label>
-        <input type="text" id="instagram" name="instagram" required>
-
-        <button type="submit">Envoyer</button>
-      </form>
-
-      <!-- Affichage des données -->
-      <div id="result" style="margin-top: 15px;"></div>
+    <div *ngIf="submitted" style="margin-top: 15px;">
+      <p><strong>Numéro :</strong> {{ phone }}</p>
+      <p><strong>Facebook :</strong> {{ facebook }}</p>
+      <p><strong>Instagram :</strong> {{ instagram }}</p>
     </div>
   </div>
+</div>
 
-  <script>
-    function openModal() {
-        document.getElementById("contactModal").style.display = "block";
-      }
-      
-      function closeModal() {
-        document.getElementById("contactModal").style.display = "none";
-      }
-      
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("contactForm");
-        const result = document.getElementById("result");
-      
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-      
-          const phone = document.getElementById("phone").value;
-          const facebook = document.getElementById("facebook").value;
-          const instagram = document.getElementById("instagram").value;
-          result.innerHTML = `
-            <p><strong>Numéro :</strong> ${phone}</p>
-            <p><strong>Facebook :</strong> ${facebook}</p>
-            <p><strong>Instagram :</strong> ${instagram}</p>
-          `;
-      
-          form.reset();
-        });
-      });
-  </script>
-</body>
 

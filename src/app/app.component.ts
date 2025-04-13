@@ -10,4 +10,5 @@ import { FrontLayoutComponent } from "./layouts/front-layout/front-layout.compon
 })
 export class AppComponent {
   title = 'ChoufliDarr';
+
 }
