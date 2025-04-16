@@ -37,7 +37,6 @@ export class FrontLayoutComponent implements OnInit, OnDestroy {
         this.currentRoute = event.url.split('/').pop() || '';
         console.log('Current Route Segment:', this.currentRoute);
         if (this.currentRoute === 'loginn' || this.currentRoute === 'sign') {
-          alert(this.currentRoute)
           this.display = false; // Hide sidebar when on the login page
         }
         else {

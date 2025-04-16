@@ -4,8 +4,11 @@
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="login-button" (click)="login()">
+  <div *ngIf="!display" class="login-button" (click)="login()">
     <button class="btn-login" >Login</button>
+  </div>
+  <div *ngIf="display" class="login-button" (click)="logout()">
+    <button class="btn-login">LogOut</button>
   </div>
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo"><b>Welcome to</b></h1>
@@ -17,7 +20,7 @@
   
   <br>
 <div class="w3-half">
-  <a routerLink="/loginprp" style="color:#B4846C;">
+  <a routerLink="/proprietaire" style="color:#B4846C;">
   <div class="card">
    
     <p class="heading">
