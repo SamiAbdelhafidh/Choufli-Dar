@@ -12,6 +12,7 @@ export const routes: Routes = [
         path: '', component: FrontLayoutComponent, children: [
             { path: '', loadChildren: () => import('./views/front/home/home.module').then(m => m.HomeModule) },
             { path: 'loginn', loadChildren: () => import('./views/front/loginn/loginn.module').then(m => m.LoginnModule), canActivate: [NotAuthGuard] },
+            { path: 'pay', loadChildren: () => import('./views/front/pay/pay.module').then(m => m.PayModule),canActivate: [AuthGuard] },
             { path: 'loginprp', loadChildren: () => import('./views/front/loginprp/loginprp.module').then(m => m.LoginprpModule),canActivate: [AuthGuard] },
             { path: 'about', loadChildren: () => import('./views/front/about/about.module').then(m => m.AboutModule),canActivate: [AuthGuard] },
             { path: 'house', loadChildren: () => import('./views/front/house/house.module').then(m => m.HouseModule) ,canActivate: [NotAuthGuard]},

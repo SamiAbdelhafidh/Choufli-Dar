@@ -1,0 +1,64 @@
+/* Global style for the form */
+.payment-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .payment-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  /* Inputs & selects styling */
+  .payment-form input,
+  .payment-form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .payment-form input:focus,
+  .payment-form select:focus {
+    outline: none;
+    border-color: #5c6bc0;
+    box-shadow: 0 0 8px rgba(92, 107, 192, 0.2);
+  }
+  
+  /* Row for month/year */
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .row select {
+    flex: 1;
+  }
+  
+  /* Submit button */
+  .payment-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #B4846C;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .payment-form button:hover {
+    background-color: #B4846C;
+  }
+  

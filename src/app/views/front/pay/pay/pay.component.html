@@ -1,0 +1,65 @@
+<form class="payment-form" [formGroup]="requestForm" (ngSubmit)="onSubmit()" >
+    <h2>Paiement</h2>
+  
+    <label>Card Number:</label>
+    <input
+      type="text"
+      formControlName="card"
+      placeholder="1234 5678 9012 3456"
+      name="card"
+      ngModel
+      required
+    />
+  
+    <div class="row">
+      <select name="month" formControlName="month" ngModel required>
+        <option value="" disabled selected>Mois</option>
+        <option *ngFor="let mois of moisList" [value]="mois">{{ mois }}</option>
+      </select>
+  
+      <select name="annee" formControlName="annee" ngModel required>
+        <option value="" disabled selected>Année</option>
+        <option *ngFor="let annee of anneeList" [value]="annee">{{ annee }}</option>
+      </select>
+    </div>
+  
+    <input
+      type="text"
+      formControlName="security"
+      placeholder="Security Code"
+      name="securityCode"
+      ngModel
+      required
+    />
+  
+    <input
+      type="text"
+      formControlName="name"
+      placeholder="The Name"
+      name="name"
+      ngModel
+      required
+    />
+  
+    <input
+      type="email"
+      formControlName="email"
+      placeholder="E-MAIL"
+      name="email"
+      ngModel
+      required
+    />
+  
+    <input
+      type="number"
+      formControlName="montant"
+      placeholder="Montant en TN"
+      name="montant"
+      ngModel
+      required
+    />
+    <div class="login-button" (click)="proprietaire()">
+        <button id="b"  type="submit">Payer</button>
+    </div>
+  </form>
+  
