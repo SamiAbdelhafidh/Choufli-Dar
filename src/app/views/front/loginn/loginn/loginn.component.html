@@ -9,9 +9,10 @@
           <input class="w3-input w3-border w3-round" type="email"
           formControlName="email" id="email" required 
           placeholder="Enter your email" 
-          style="padding: 12px; font-size: 14px;">          <div class="alert alert-danger" *ngIf="email.errors?.['required'] && email.touched " >
+          style="padding: 12px; font-size: 14px;"> 
+                   <!-- <div class="alert alert-danger" *ngIf="email.errors?.['required'] && email.touched " >
             This email input is required
-        </div>
+        </div> -->
         <!-- <div class="alert alert-danger" *ngIf="email.touched && email.errors?.['minlength'] ">
             minlength error minimum 4 caracters
         </div>
@@ -22,7 +23,7 @@
         
         <div class="w3-section">
           <label for="password" style="font-size: 16px;">Password</label>
-          <input class="w3-input w3-border w3-round" type="password" formControlName="password" id="password"  required placeholder="Enter your password" style="padding: 12px; font-size: 14px;">
+          <input class="w3-input w3-border w3-round" type="password" formControlName="password" id="password"   placeholder="Enter your password" style="padding: 12px; font-size: 14px;">
           
           
         </div>

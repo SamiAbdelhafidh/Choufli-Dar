@@ -11,18 +11,18 @@ export class DataServiceService {
     constructor(private http: HttpClient) {}
 
     addNewStudent(profile: any): Observable<any> {
-        return this.http.post(`http://localhost:5000/api/auth/register`, profile);
+        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/register`, profile);
       }
       loginemployee(profile: any): Observable<any> {
-        return this.http.post(`http://localhost:5000/api/auth/login`, profile);
+        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/login`, profile);
       }
       prpemployee(profile: any): Observable<any> {
-        return this.http.post(`http://localhost:5000/api/auth/proprietaire`, profile);
+        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/proprietaire`, profile);
       }
       payemployee(profile: any): Observable<any> {
-        return this.http.post(`http://localhost:5000/api/auth/pay`, profile);
+        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/pay`, profile);
       }
       binomemployee(profile: any): Observable<any> {
-        return this.http.post(`http://localhost:5000/api/auth/binom`, profile);
+        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/binom`, profile);
       }
 }
