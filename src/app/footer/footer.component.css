@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-    background-color: #333;
+    background-color: #bbb;
     padding: 30px 0;
     color: white;
     display: flex;
@@ -42,7 +42,7 @@
   
   /* Footer Bottom */
   .footer-bottom {
-    background-color: #222;
+    background-color: #bbb;
     padding: 10px 0;
     text-align: center;
   }

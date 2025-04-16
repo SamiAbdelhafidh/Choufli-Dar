@@ -46,4 +46,8 @@ export class MainComponent {
     console.log('Login clicked');
     this.router.navigate(['/loginn']);
   }
+  pay(){
+    console.log('Pay clicked');
+    this.router.navigate(['/pay']);
+  }
 }

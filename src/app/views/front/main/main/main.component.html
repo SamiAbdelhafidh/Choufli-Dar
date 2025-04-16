@@ -7,9 +7,10 @@
 
   <!-- Main Listing Section -->
   <div class="listing-container">
+    <!-- <a routerLink="/pay" ></a>  -->
     <div class="card" *ngFor="let item of listings">
-      <div class="image-zone">
-        <img [src]="item.image" [alt]="item.alt" />
+      <div class="image-zone" (click)="pay()">
+        <img [src]="item.image" [alt]="item.alt"  />
       </div>
       <div class="description">
         <p>{{ item.line1 }}</p>
@@ -17,6 +18,7 @@
         <mark>{{ item.price }}</mark>
       </div>
     </div>
+    
   </div>
 </div>
 

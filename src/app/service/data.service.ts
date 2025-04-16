@@ -22,5 +22,7 @@ export class DataServiceService {
       payemployee(profile: any): Observable<any> {
         return this.http.post(`http://localhost:5000/api/auth/pay`, profile);
       }
-      
+      binomemployee(profile: any): Observable<any> {
+        return this.http.post(`http://localhost:5000/api/auth/binom`, profile);
+      }
 }

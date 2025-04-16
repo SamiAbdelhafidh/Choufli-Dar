@@ -35,15 +35,15 @@ export class BinomComponent {
   }
   contact(){
     console.log('main clicked');
-    this.router.navigate(['/butn-contact']);
+    this.router.navigate(['/btcont']);
   }
   onSubmit() {
     console.log(this.requestForm.value);
-    this.share.loginemployee(this.requestForm.value).subscribe(
+    this.share.binomemployee(this.requestForm.value).subscribe(
       (response:any) => {
         console.log('Student added successfully:', response);
         
-        this.router.navigate(['/main']);
+        this.router.navigate(['/btcont']);
   
   
       },
@@ -52,7 +52,7 @@ export class BinomComponent {
         // Handle error, e.g., show an error message
       }
     );
-    this.router.navigate(['/main']);
+    this.router.navigate(['/btcont']);
 }
 
 }
