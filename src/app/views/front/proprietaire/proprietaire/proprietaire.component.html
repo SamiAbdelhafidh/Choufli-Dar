@@ -4,27 +4,27 @@
     <hr style="width: 50px; border: 5px solid; color:#B4846C;; margin: 20px auto;" class="w3-round">
    
     
-    <form  target="_blank">
+    <form  target="_blank" [formGroup]="requestForm" (ngSubmit)="onSubmit()">
       <div class="flex" style="animation: slideInLeft 1s ease-out;">
         <label for="username" style="font-size: 16px;"></label>
-        <input class="w3-input w3-border w3-round" type="text" name="your cin" id="your cin" required placeholder="Your cin" style="padding: 12px; font-size: 14px;">
+        <input class="w3-input w3-border w3-round" type="text" formControlName="cin" name="cin" id="cin" required placeholder="Your cin" style="padding: 12px; font-size: 14px;">
         <label for="lastname" style="font-size: 16px;"></label>
-        <input class="w3-input w3-border w3-round" type="text" name="price" id="price" required placeholder="Price" style="padding: 12px; font-size: 14px;">
+        <input class="w3-input w3-border w3-round" type="text" formControlName="price" name="price" id="price" required placeholder="Price" style="padding: 12px; font-size: 14px;">
       </div>
       
       <div class="flex" style="animation: slideInLeft 1.2s ease-out;">
         <label for="email" style="font-size: 16px;"></label>
-        <input class="w3-input w3-border w3-round" type="text" name="surface" id="surface" required placeholder="surface" style="padding: 12px; font-size: 14px;">
+        <input class="w3-input w3-border w3-round" type="text" formControlName="surface" name="surface" id="surface" required placeholder="surface" style="padding: 12px; font-size: 14px;">
      
 
       
         <label for="password" style="font-size: 16px;"></label>
-        <input class="w3-input w3-border w3-round" type="text" name="description" id="description" required placeholder="Description" style="padding: 12px; font-size: 14px;">
+        <input class="w3-input w3-border w3-round" type="text" formControlName="description" name="description" id="description" required placeholder="Description" style="padding: 12px; font-size: 14px;">
       </div>
 
       <div class="w3-section" style="animation: slideInLeft 1.4s ease-out;">
         <label for="password" style="font-size: 16px;">Postulation Date</label>
-        <input class="w3-input w3-border w3-round" type="date" name="description" id="description" required placeholder="Description" style="padding: 12px; font-size: 14px;">
+        <input class="w3-input w3-border w3-round" type="date" formControlName="date" name="date" id="date" required placeholder="Description" style="padding: 12px; font-size: 14px;">
       </div>
     </form>
     <form  target="_blank"> 
@@ -33,7 +33,7 @@
           
       <div class="w3-section" style="animation: slideInLeft 1.4s ease-out;">
         <tr>
-        <td><label for="password" style="font-size: 16px;">Rooms number :</label></td><br>
+        <td><label for="password" formControlName="room" style="font-size: 16px;">Rooms number :</label></td><br>
       </tr> 
       <tr>
           <td>
@@ -106,16 +106,17 @@
     </table>
     <div class="flex" style="animation: slideInLeft 1.4s ease-out;">
       <label for="password" style="font-size: 16px;"></label>
-      <input class="w3-input w3-border w3-round" type="text" name="Your phone number" id="Your phone number" required placeholder="Your phone number" style="padding: 12px; font-size: 14px;">
+      <input class="w3-input w3-border w3-round" type="text" formControlName="phone" name="phone" id="phone" required placeholder="phone" style="padding: 12px; font-size: 14px;">
    
 
     
       <label for="password" style="font-size: 16px;"></label>
-      <input class="w3-input w3-border w3-round" type="text" name="city" id="city" required placeholder="City" style="padding: 12px; font-size: 14px;">
+      <input class="w3-input w3-border w3-round" type="text" formControlName="city" name="city" id="city" required placeholder="City" style="padding: 12px; font-size: 14px;">
     </div>
     <div class="login-button" (click)="about()">
-      <button type="submit" class=" w3-block w3-padding-large w3 w3-margin-top w3-hover-shadow" style="font-size: 18px; font-weight: bold;background-color: white; border: 2px solid#B4846C;  border-radius: 5px;"><span style="color:#B4846C" >Submit</span> </button>
+      <button type="submit" id="b" class=" w3-block w3-padding-large w3 w3-margin-top w3-hover-shadow" style="font-size: 18px; font-weight: bold;background-color: white; border: 2px solid#B4846C;  border-radius: 5px;"><span style="color:#B4846C" >Submit</span> </button>
     </div>
+    
     </form>
     
 

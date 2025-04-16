@@ -16,5 +16,8 @@ export class DataServiceService {
       loginemployee(profile: any): Observable<any> {
         return this.http.post(`http://localhost:5000/api/auth/login`, profile);
       }
+      prpemployee(profile: any): Observable<any> {
+        return this.http.post(`http://localhost:5000/api/auth/proprietaire`, profile);
+      }
       
 }

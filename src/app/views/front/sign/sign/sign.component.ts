@@ -34,6 +34,7 @@ export class SignComponent {
     this.share.addNewStudent(this.requestForm.value).subscribe(
       (response:any) => {
         console.log('Student added successfully:', response);
+        this.router.navigate(['/loginn']);
       },
       (error:any) => {
         console.error('Error adding student:', error);

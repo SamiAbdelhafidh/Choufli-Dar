@@ -15,13 +15,13 @@
             <input type="file" accept="image/*" hidden />
           </label>
         </div>
-        <form (ngSubmit)="onSubmit($event)">
-          <input type="text" placeholder="Name" required />
-          <input type="number" placeholder="Age" required />
-          <input type="text" placeholder="Location" required />
-          <input type="text" placeholder="Institute" required />
-          <textarea placeholder="Description" required></textarea>
-          <input type="text" placeholder="To share" required />
+        <form  [formGroup]="requestForm" (ngSubmit)="onSubmit()">
+          <input type="text" formControlName="name" placeholder="Name" required />
+          <input type="number" formControlName="age" placeholder="Age" required />
+          <input type="text" formControlName="location" placeholder="Location" required />
+          <input type="text" formControlName="institute" placeholder="Institute" required />
+          <textarea formControlName="description" placeholder="Description" required></textarea>
+          <input type="text" formControlName="share" placeholder="share" required />
           <div class="login-button" (click)="contact()">
             <button class="contact-btn" type="submit">Contacter</button>
           </div>
