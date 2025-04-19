@@ -10,19 +10,23 @@ import { tap, catchError } from 'rxjs/operators';
 export class DataServiceService {
     constructor(private http: HttpClient) {}
 
+    private apiUrl = 'https://choufli-dar-back-endrz.onrender.com/'; 
+    //private apiUrl = 'http://localhost:5000/';
+
+
     addNewStudent(profile: any): Observable<any> {
-        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/register`, profile);
+        return this.http.post(`${this.apiUrl}api/auth/register`, profile);
       }
       loginemployee(profile: any): Observable<any> {
-        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/login`, profile);
+        return this.http.post(`${this.apiUrl}api/auth/login`, profile);
       }
       prpemployee(profile: any): Observable<any> {
-        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/proprietaire`, profile);
+        return this.http.post(`${this.apiUrl}api/auth/proprietaire`, profile);
       }
       payemployee(profile: any): Observable<any> {
-        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/pay`, profile);
+        return this.http.post(`${this.apiUrl}api/auth/pay`, profile);
       }
       binomemployee(profile: any): Observable<any> {
-        return this.http.post(`https://choufli-dar-back-endrz.onrender.com/api/auth/binom`, profile);
+        return this.http.post(`${this.apiUrl}api/auth/binom`, profile);
       }
 }
